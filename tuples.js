@@ -5,3 +5,7 @@ studentDetails.push("manu");
 console.log(studentDetails);
 studentDetails.push(20);
 console.log(studentDetails);
+//named tuples
+var graph = [55.5, 60];
+graph.push(30);
+console.log(graph);
