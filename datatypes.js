@@ -32,4 +32,33 @@ var userData;
 userData = "Manu";
 userData = 1234;
 userData = true;
-console.log(userData);
+//void
+function greet() {
+    //console.log("Hello, Manmohan!");
+}
+greet();
+//null
+var manager = null;
+//console.log(manager);
+manager = "Manu";
+//console.log(manager)
+//let manager: string = null; //throws error, we cannot assign null to string data type.
+//undefined --- a value has not been assigned
+var city;
+//console.log(city)
+city = "Kurnool";
+function showRole(role) {
+    switch (role) {
+        case "admin":
+            return "Admin access";
+        case "employee":
+            return "Employee access";
+        case "guest":
+            return "Guest access";
+        // default: {
+        //     const impossible: never = role;
+        //     return impossible;
+        // }
+    }
+}
+console.log(showRole("admin"));

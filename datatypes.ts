@@ -48,5 +48,53 @@ userData = 1234
 userData = true
 
 
+//void
+function greet(): void {
+    //console.log("Hello, Manmohan!");
+}
+
+greet();
+
+//null
+let manager: string | null = null;
+
+//console.log(manager);
+
+manager = "Manu"
+//console.log(manager)
+
+//let manager: string = null; //throws error, we cannot assign null to string data type.
+
+//undefined --- a value has not been assigned
+let city: string | undefined
+
+//console.log(city)
+
+city = "Kurnool"
+
+//never 
+type Role = "admin" | "employee" | "guest";
+
+function showRole(role: Role): string {
+    switch (role) {
+        case "admin":
+            return "Admin access";
+
+        case "employee":
+            return "Employee access";
+
+        case "guest":
+            return "Guest access";
+
+        default: {
+            const impossible: never = role;
+            return impossible;
+        }
+    }
+}
+
+console.log(showRole("admin"));
+
+
 
 
